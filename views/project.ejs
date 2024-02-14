@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+
+<head>
+<%-include('./inc/libcss.ejs')%>
+
+</head>
+
+<body>
+<%-include('./inc/nav.ejs')%>
+
+    <!-- Breadcrumb Section Start -->
+    <div class="breadcrumb" data-bg-image="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <h1 class="breadcrumb_title">Kharybulbul Gallery</h1>
+                        <ul class="breadcrumb_list">
+                            <li><a href="/">Home</a></li>
+                            <li>Chocolate House GalLery</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Product Section Start -->
+    <div class="shop-product-section sidebar-left overflow-hidden">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 section-padding-04">
+
+                    <!-- Product Section Start -->
+                    <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 row-cols-1 mb-n50">
+                        <% galleryItems.forEach(function(item) { %>
+                            <div class="col mb-50">
+                                <!-- Product Item Start -->
+                                <div class="product-item text-center">
+                                    <div class="product-item__image border w-100">
+                                        <img width="350" height="350" src="<%= item.imageUrl %>" alt="Product">
+                                    </div>
+                                    <div class="product-item__content pt-5">
+                                        <h5 class="product-item__title"><%= item.title %></h5>
+                                    </div>
+                                </div>
+                                <!-- Product Item End -->
+                            </div>
+                        <% }); %>
+                    </div>
+                    
+                    <!-- Product Section End -->
+                    <!-- Shop bottom Bar Start -->
+                    <div class="shop-bottombar">
+                        <ul class="pagination">
+                            <li class="disabled"><a href="#prev">←</a></li>
+                            <li><a class="active" href="#page=1">1</a></li>
+                            <li><a href="#page=2">2</a></li>
+                            <li><a href="#page=3">3</a></li>
+                            <li><a href="#page=4">4</a></li>
+                            <li><a href="#page=5">5</a></li>
+                            <li><a href="#next">→</a></li>
+                        </ul>
+                    </div>
+                    <!-- Shop bottom Bar End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product Section End -->
+
+    <!-- Scroll Top Start -->
+    <a href="#/" class="scroll-top" id="scroll-top">
+        <i class="lastudioicon-up-arrow"></i>
+    </a>
+    <!-- Scroll Top End -->
+
+    <div class="bg-dark-four dark-footer">
+ <%-include('./inc/footer.ejs')%>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<%-include('./inc/libscript.ejs')%>
+    <!-- Activation JS -->
+    <script src="/asset/js/main.js"></script>
+
+</body>
+
+</html>

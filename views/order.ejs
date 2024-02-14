@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+<%-include('./inc/libcss.ejs')%>
+</head>
+
+<body>
+<%-include('./inc/nav.ejs')%>
+
+
+    <!-- Breadcrumb Section Start -->
+    <div class="breadcrumb" data-bg-image="https://scontent.fgyd3-1.fna.fbcdn.net/v/t1.6435-9/90789639_240369000695165_1591469980862382080_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=9267fe&_nc_ohc=hyp_p5Qcsy8AX-lOjvX&_nc_ht=scontent.fgyd3-1.fna&oh=00_AfA9AA2wvcGxMJgxyUGSw4ulYasmZ_xGA2MgKcXGAfhZxw&oe=6532DCCF">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                        <h1 class="breadcrumb_title">Bizimlə Əlaqə</h1>
+                        <ul class="breadcrumb_list">
+                            <li><a href="index.html">Ana Səhifə</a></li>
+                            <li>Sifariş Verin</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Section End -->
+
+    <!-- Contact Form Section Start -->
+    <div class="contact-section3">
+        <div class="container-fluid g-0 section-padding-03">
+            <div class="row g-0 align-items-center">
+                <div class="col-md-6 col-12">
+                    <!-- Google Map Area Start -->
+                    <div class="google-map-area w-100" data-aos="fade-up" data-aos-duration="1000">
+                        <iframe class="contact-map_two" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.632002758575!2d49.83816759031788!3d40.37268338470659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d71ee68c54b%3A0x16fdc738277e4355!2zWGFyxLEgQsO8bGLDvGwgQ2hvY29sYXRlIEhvdXNl!5e0!3m2!1str!2saz!4v1694648344375!5m2!1str!2saz"></iframe>
+                    </div>
+                    <!-- Google Map Area Start -->
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="contact-section3_formbg">
+                        <h2 class="contact-section3_form__title">Contact</h2>
+                        <p class="contact-section3_form__text">Order Or Write Your Message</p>
+                        <form class="contact-section3_form" id="contact-form" action="/submit-order" method="post">
+                            <div class="row">
+                                <div class="col-12 form-p">
+                                    <div class="form-group">
+                                        <input class="form-field" type="text" placeholder="Adınız Soyadınız*" name="adSoyad" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 form-p">
+                                    <div class="form-group">
+                                        <input class="form-field" type="number" placeholder="Mobil Nömrəniz*" name="mobilNomre" required>
+                                    </div>
+                                </div>
+                                <div class="col-12 form-p">
+                                    <div class="form-group">
+                                        <textarea class="form-control form-field text-area" name="tesvir" placeholder="Mesaj*" required></textarea>
+                                    </div>
+                                </div>
+                                        <button class="btn btn-secondary btn-hover-primary" type="submit">Sifariş Ver</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- Message Notification -->
+                        <p class="form-messege"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container custom-container section-padding-03 pt-0">
+            <div class="row row-cols-md-3 row-cols-1 content-list">
+                <div class="col">
+                    <div class="contact-section3_content">
+                        <span class="contact-section3_content__icon"><i class="lastudioicon lastudioicon-pin-3-2"></i></span>
+                        <span class="contact-section3_content__title">Store Location</span>
+                        <span class="contact-section3_content__text">Azerbaijan, Baku, Sahil M. Khagani Street</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="contact-section3_content">
+                        <span class="contact-section3_content__icon"><i class="lastudioicon lastudioicon-phone-2"></i></span>
+                        <span class="contact-section3_content__title">Phone Nummer</span>
+                        <span class="contact-section3_content__text"><a href="tel:994508558866"> +99450 855 8866</a><br><a href="tel:994502024003">+99450 202 4003</a></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="contact-section3_content">
+                        <span class="contact-section3_content__icon"><i class="lastudioicon lastudioicon-mail"></i></span>
+                        <span class="contact-section3_content__title">Email Address</span>
+                        <span class="contact-section3_content__text"><a href="mailto:info@kharybulbul.com">info@kharybulbul.com</a> <br><a href="mailto:info@kharybulbul.com">info@kharybulbul.com</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact Form Section End -->
+
+    <div class="bg-dark-four dark-footer">
+    <%-include('./inc/footer.ejs')%>
+    </div>
+
+    <!-- JS Vendor, Plugins & Activation Script Files -->
+
+    <!-- Vendors JS -->
+    <script src="/sayt/js/vendor/modernizr-3.11.7.min.js"></script>
+    <script src="/sayt/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="/sayt/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <script src="/sayt/js/vendor/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugins JS -->
+    <script src="/sayt/js/swiper-bundle.min.js"></script>
+    <script src="/sayt/js/countdown.min.js"></script>
+    <script src="/sayt/js/ion.rangeSlider.min.js"></script>
+    <script src="/sayt/js/lightgallery.min.js"></script>
+    <script src="/sayt/js/jquery.magnific-popup.min.js"></script>
+    <script src="/sasa/js/ajax.js"></script>
+    <script src="/sayt/js/jquery.validate.min.js"></script>
+
+    <!-- Activation JS -->
+    <script src="/sayt/js/main.js"></script>
+
+</body>
+
+</html>

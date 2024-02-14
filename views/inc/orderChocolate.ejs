@@ -1,0 +1,48 @@
+
+    <!-- Product Section End -->
+    <div class="section-padding-01">
+
+        <div class="container">
+            <!-- Section Title Strat -->
+            <div class="section-title text-center max-width-720 mx-auto">
+                <h2 class="section-title__title">Şkoladlarımız</h2>
+                <p>Xarı Bülbül</p>
+            </div>
+            <!-- Section Title End -->
+
+            <!-- Product Tab Menu Strat -->
+            <div class="product-tab-menu pb-8">
+                <ul class="nav justify-content-center">
+                    <li><button class="active" data-bs-toggle="tab" data-bs-target="#tab1">Hamısı</button></li>
+                </ul>
+            </div>
+            <!-- Product Tab Menu End -->
+
+           <div class="tab-content">
+    <div class="tab-pane fade show active" id="tab1">
+        <div class="row row-cols-lg-4 row-cols-sm-2 row-cols-1 mb-n50">
+            <% products.forEach(function(product) { %>
+                <div class="col mb-50">
+                    <!-- Product Item Start -->
+                    <div class="product-item text-center">
+                        <div class="product-item__image border w-100">
+                            <a href="<%= product.link %>">
+                                <img width="350" height="350" src="<%= product.image %>" alt="<%= product.name %>">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Product Item End -->
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Product Section End -->
