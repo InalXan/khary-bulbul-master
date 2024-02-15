@@ -17,7 +17,7 @@ const cookieParser = require('cookie-parser');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://adamadamov316972:Z84EZUvzjX9JOCTw@cluster0.zpmzf47.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://admin:3y3vaye1@xaribulbul.0pbedfo.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());

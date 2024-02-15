@@ -1,9 +1,4 @@
 
-/* Common Style */
-*, *::after, *::before {
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 
 html {
   scroll-behavior: smooth;
@@ -22,7 +17,6 @@ body {
   visibility: visible;
   overflow-x: hidden;
   color: #555555;
-  background-color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
